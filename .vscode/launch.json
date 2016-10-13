@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "C++ Launch (Windows)",
+            "request": "launch",
+            "program": "${workspaceRoot}/a.exe",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${workspaceRoot}",
+            "environment": [],
+            "externalConsole": true ,
+            "launchCompleteCommand" : "exec-run",
+            "windows": {
+                "type": "cppdbg",
+                "MiMode" : "gdb",
+                "miDebuggerPath": "C:\\MinGw\\bin\\gdb.exe"    
+            }
+        },
+        {
+            "name": "C++ Attach (Windows)",
+            "type": "cppvsdbg",
+            "request": "attach",
+            "processId": "${command.pickProcess}"
+        }
+    ]
+}
